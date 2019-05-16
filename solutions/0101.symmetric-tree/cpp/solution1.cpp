@@ -11,7 +11,9 @@ class Solution {
 private:
     bool isSymmetrics(TreeNode* root_a, TreeNode* root_b) {
         if (root_a && root_b) {
-            return root_a->val == root_b->val && isSymmetrics(root_a->left, root_b->right) && isSymmetrics(root_a->right, root_b->left);
+            return root_a->val == root_b->val && 
+                   isSymmetrics(root_a->left, root_b->right) && 
+                   isSymmetrics(root_a->right, root_b->left);
         } else {
             return !root_a && !root_b;
         }
