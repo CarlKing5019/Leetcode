@@ -4,9 +4,10 @@
 
 
 
-| #    | Title                                 | Solution                                 | Notes               | Time   | Space  | Difficulty | Remark    |
-| ---- | ------------------------------------- | ---------------------------------------- | ------------------- | ------ | ------ | ---------- | --------  |
-| 0144 | [Binary Tree Preorder Traversal][144] | [C++][144-cpp]<br>[Python][144-python]   | [Notes][144-notes]  | $O(n)$ | $O(h)$ | Medium     | Recursion |
+| #    | Title                                 | Solution                               | Notes              | Time   | Space  | Difficulty | Remark    |
+| ---- | ------------------------------------- | -------------------------------------- | ------------------ | ------ | ------ | ---------- | --------- |
+| 0144 | [Binary Tree Preorder Traversal][144] | [C++][144-cpp]<br>[Python][144-python] | [Notes][144-notes] | $O(n)$ | $O(h)$ | Medium     | Recursion |
+| 0094 | [Binary Tree Inorder Traversal][94]   | [C++][94-cpp]<br>[Python][94-python]   | [Notes][94-notes]  | $O(n)$ | $O(h)$ | Medium     | Recursion |
 
 
 
@@ -14,3 +15,10 @@
 [144-notes]:  ./solutions/0144.binary-tree-preorder-traversal/
 [144-cpp]:    ./solutions/0144.binary-tree-preorder-traversal/cpp
 [144-python]: ./solutions/0144.binary-tree-preorder-traversal/python
+
+
+[94]: https://leetcode.com/problems/binary-tree-inorder-traversal/
+[94-notes]:  ./solutions/0094.binary-tree-inorder-traversal/
+[94-cpp]:    ./solutions/0094.binary-tree-inorder-traversal/cpp
+[94-python]: ./solutions/0094.binary-tree-inorder-traversal/python
+
