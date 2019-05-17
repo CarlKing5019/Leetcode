@@ -1,12 +1,5 @@
----
-markdown:
-  image_dir: /
-  path: /readme.md
-  ignore_from_front_matter: true
-  absolute_image_path: false
----
+### [145\. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)
 
-
-### Solution 1: Recursion
+#### Solution 1: Recursion
 
 @import "solution1.cpp"

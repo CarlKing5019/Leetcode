@@ -1,5 +1,5 @@
 @import "problem.md"
 
-### Solution 1: Recursion
+#### Solution 1: Recursion
 
 @import "cpp/solution1.cpp"

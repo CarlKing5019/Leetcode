@@ -1,4 +1,3 @@
-  
 ### [102\. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/ )
   
   
@@ -29,7 +28,7 @@ return its level order traversal as:
 ```
   
   
-### Solution 1: Recursion
+#### Solution 1: Recursion
   
   
 ```cpp

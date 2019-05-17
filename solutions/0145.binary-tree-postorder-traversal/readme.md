@@ -1,7 +1,3 @@
-  
-  
-  
-  
 ### [145\. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/ )
   
   
@@ -27,7 +23,7 @@ Output: [3,2,1]
   
   
   
-### Solution 1: Recursion
+#### Solution 1: Recursion
   
   
 ```cpp

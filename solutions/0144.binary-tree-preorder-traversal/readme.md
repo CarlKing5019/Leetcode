@@ -1,10 +1,5 @@
-  
-  
-  
-  
-## [144\. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/ )
-  
-  
+### [144\. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)
+
 Difficulty: **Medium**
   
   
@@ -26,7 +21,7 @@ Output: [1,2,3]
 **Follow up:** Recursive solution is trivial, could you do it iteratively?
   
   
-### Solution 1: Recursion
+#### Solution 1: Recursion
   
   
 ```cpp

@@ -32,7 +32,7 @@ Bonus points if you could solve it both recursively and iteratively.
   
   
   
-### Solution 1: Recursion
+#### Solution 1: Recursion
   
   
 ```cpp

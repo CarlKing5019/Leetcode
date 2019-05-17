@@ -1,7 +1,6 @@
-  
-  
-  
-### Solution 1: Recursion
+### [144\. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)
+
+#### Solution 1: Recursion
   
   
 ```py

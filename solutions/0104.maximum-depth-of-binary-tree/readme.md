@@ -27,7 +27,7 @@ return its depth = 3.
   
   
   
-### Solution 1: Recursion
+#### Solution 1: Recursion
   
   
 ```cpp
