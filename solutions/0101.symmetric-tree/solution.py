@@ -7,6 +7,14 @@
 '''
 
 
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+
 class Solution:
     def isSymmetrics(self, root_a: TreeNode, root_b: TreeNode) -> bool:
         if root_a and root_b:
@@ -19,3 +27,4 @@ class Solution:
     
     def isSymmetric(self, root: TreeNode) -> bool:
         return self.isSymmetrics(root, root)
+
