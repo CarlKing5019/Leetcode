@@ -1,9 +1,3 @@
-### [102\. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
-  
-#### Solution 1: Recursion
-  
-  
-```cpp
 /*
  * Solution for Binary Tree Level Order Traversal (Leetcode 102)
  * https://leetcode.com/problems/binary-tree-level-order-traversal/
@@ -11,14 +5,19 @@
  * Space Complexity: O(h)
  * Idea: Recursion
  */
-  
-  
-/* 
- * In this solution, we fix the level number problem in the previous solution.
- * The key point is this statement `if(level + 1 > result.size()){ result.push_back(vector<int>{})} ;`.
- * Reference: http://t.cn/EavpjkS
+
+
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
  */
-  
+
+
 class Solution {
 public:
     vector<vector<int>> levelOrder(TreeNode* root) {
@@ -26,7 +25,7 @@ public:
         levelOrderRecur(result, root, 0);
         return result;
     }
-  
+
 private:
     void levelOrderRecur(vector<vector<int>> &result, TreeNode *root, int level) {
         if (root == NULL) {
@@ -40,5 +39,4 @@ private:
         levelOrderRecur(result, root->right, level + 1);
     }
 };
-```  
-  
+

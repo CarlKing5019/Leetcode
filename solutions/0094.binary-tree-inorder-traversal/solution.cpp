@@ -1,9 +1,3 @@
-### [94\. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
-
-#### Solution 1: Recursion
-  
-  
-```cpp
 /*
  * Solution for Binary Tree Inorder Traversal (Leetcode 94)
  * https://leetcode.com/problems/binary-tree-inorder-traversal/
@@ -11,8 +5,8 @@
  * Space Complexity: O(h)
  * Idea: Recursion
  */
-  
-  
+
+
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -22,8 +16,8 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-  
-  
+
+
 class Solution {
 private:
     void inorderTraversalRecur(TreeNode* root, vector<int>& res) {
@@ -34,15 +28,14 @@ private:
         res.push_back(root->val);
         inorderTraversalRecur(root->right, res);
     }
-  
-  
+
+
 public:
     vector<int> inorderTraversal(TreeNode* root) {
         vector<int> res;
         inorderTraversalRecur(root, res);
         return res;
-  
+        
     }
 };
-```  
-  
+

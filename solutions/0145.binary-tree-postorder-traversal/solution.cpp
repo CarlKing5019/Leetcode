@@ -1,6 +1,6 @@
 /*
- * Solution for Binary Tree Inorder Traversal (Leetcode 94)
- * https://leetcode.com/problems/binary-tree-inorder-traversal/
+ * Solution for Binary Tree Postorder Traversal (Leetcode 145)
+ * https://leetcode.com/problems/binary-tree-postorder-traversal/
  * Time Complexity: O(n)
  * Space Complexity: O(h)
  * Idea: Recursion
@@ -20,21 +20,21 @@
 
 class Solution {
 private:
-    void inorderTraversalRecur(TreeNode* root, vector<int>& res) {
+    void postorderTraversalRecur(TreeNode* root, vector<int>& res) {
         if (root == NULL) {
             return;
         }
-        inorderTraversalRecur(root->left, res);
+        postorderTraversalRecur(root->left, res);
+        postorderTraversalRecur(root->right, res);
         res.push_back(root->val);
-        inorderTraversalRecur(root->right, res);
     }
 
 
 public:
-    vector<int> inorderTraversal(TreeNode* root) {
+    vector<int> postorderTraversal(TreeNode* root) {
         vector<int> res;
-        inorderTraversalRecur(root, res);
+        postorderTraversalRecur(root, res);
         return res;
-        
     }
 };
+
