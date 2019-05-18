@@ -1,17 +1,11 @@
-### [144\. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)
-
-#### Solution 1: Recursion
-  
-  
-```cpp
 /*
  * Solution for Binary Tree Preorder Traversal (Leetcode 144)
  * https://leetcode.com/problems/binary-tree-preorder-traversal/
  * Time Complexity: O(n)
  * Space Complexity: O(h)
  */
-  
-  
+
+
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -21,8 +15,8 @@
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-  
-  
+
+
 class Solution {
 private:
     void preorderTraversalRecur(TreeNode* root, vector<int>& res) {
@@ -33,8 +27,8 @@ private:
         preorderTraversalRecur(root->left, res);
         preorderTraversalRecur(root->right, res);
     }
-  
-  
+
+
 public:
     vector<int> preorderTraversal(TreeNode* root) {
         vector<int> res;
@@ -42,5 +36,4 @@ public:
         return res;
     }
 };
-```  
-  
+

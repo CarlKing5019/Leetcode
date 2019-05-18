@@ -1,6 +1,6 @@
 '''
- * Solution for Binary Tree Postorder Traversal (Leetcode 145)
- * https://leetcode.com/problems/binary-tree-postorder-traversal/
+ * Solution for Binary Tree Inorder Traversal (Leetcode 94)
+ * https://leetcode.com/problems/binary-tree-inorder-traversal/
  * Time Complexity: O(n)
  * Space Complexity: O(h)
  * Idea: Recursion
@@ -14,9 +14,11 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution:
-    def postorderTraversal(self, root: TreeNode) -> List[int]:
+    def inorderTraversal(self, root: TreeNode) -> List[int]:
         if root is None:
             return []
         else:
-            return self.postorderTraversal(root.left) + self.postorderTraversal(root.right) + [root.val]
+            return self.inorderTraversal(root.left) + [root.val] + self.inorderTraversal(root.right)
+
