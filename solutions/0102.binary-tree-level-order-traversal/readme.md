@@ -18,7 +18,7 @@ Given binary tree `[3,9,20,null,null,15,7]`,
 ```
   
 return its level order traversal as:  
-  
+
 ```
 [
   [3],
@@ -32,21 +32,6 @@ return its level order traversal as:
   
   
 ```cpp
-/*
- * Solution for Binary Tree Level Order Traversal (Leetcode 102)
- * https://leetcode.com/problems/binary-tree-level-order-traversal/
- * Time Complexity: O(n)
- * Space Complexity: O(h)
- * Idea: Recursion
- */
-  
-  
-/* 
- * In this solution, we fix the level number problem in the previous solution.
- * The key point is this statement `if(level + 1 > result.size()){ result.push_back(vector<int>{})} ;`.
- * Reference: http://t.cn/EavpjkS
- */
-  
 class Solution {
 public:
     vector<vector<int>> levelOrder(TreeNode* root) {
@@ -61,9 +46,11 @@ private:
             return;
         }
         if (level + 1 > result.size()) {
-            result.push_back(vector<int> {});      // Add a new sub-list in result when a new level comes out.
+            // Add a new sub-list in result when a new level comes out.
+            result.push_back(vector<int> {});      
         }
-        result[level].push_back(root->val);        // Push values into sub-list.
+        // Push values into sub-list.
+        result[level].push_back(root->val);        
         levelOrderRecur(result, root->left, level + 1);
         levelOrderRecur(result, root->right, level + 1);
     }
